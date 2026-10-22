@@ -10,7 +10,7 @@
 #include <limits.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 5
+#  define BUFFER_SIZE 42
 # endif
 
 char	*ft_get_next_line(int fd);

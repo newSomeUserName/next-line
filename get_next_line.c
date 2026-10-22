@@ -74,20 +74,3 @@ char	*ft_get_next_line(int fd)
 	return (new_line);
 }
 
-
-#include <fcntl.h>
-#include <stdio.h>
-
-int main(void)
-{
-    int   fd = open("test.txt", O_RDONLY);
-    char *line;
-
-    while ((line = ft_get_next_line(fd)) != NULL)
-    {
-        write( 1,line, ft_strlen(line));
-        free(line);
-    }
-    close(fd);
-    return (0);
-}

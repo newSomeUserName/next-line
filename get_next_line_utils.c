@@ -49,8 +49,6 @@ char	*ft_strchr(const char *s, char c)
 			return ((char *)s);
 		s++;
 	}
-	if (c == '\0')
-		return ((char *)s);	
 	return (NULL);
 }
 char *ft_strldup(const char *s, size_t len)
