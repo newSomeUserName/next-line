@@ -38,7 +38,7 @@ char	*ft_read_to_stash(int fd, char *stash)
 		return (NULL);
 	buf = malloc(BUFFER_SIZE + 1);
 	if (!buf)
-		return (NULL);
+		return (ft_free_and_null(&stash));
 	readen_bytes = 1;
 	while (readen_bytes > 0 && !ft_strchr(stash, '\n'))
 	{
