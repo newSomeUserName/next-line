@@ -136,8 +136,6 @@ for:
   valgrind.
 - **Norm:** fixing norminette formatting errors (tabs, blank lines,
   preprocessor indentation), with no logic changes.
-- **Bonus:** adapting the mandatory code to the multi-fd version (the static
-  array indexed by `fd` and the `fd` bounds check).
 - **README:** drafting this file.
 
 I reviewed and understand all of the code above.
