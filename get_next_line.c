@@ -35,7 +35,7 @@ char	*ft_read_to_stash(int fd, char *stash)
 	ssize_t		readen_bytes;
 
 	if (fd < 0 || BUFFER_SIZE <= 0 || BUFFER_SIZE >= LONG_MAX)
-		return (NULL);
+		return (ft_free_and_null(&stash));
 	buf = malloc(BUFFER_SIZE + 1);
 	if (!buf)
 		return (ft_free_and_null(&stash));
