@@ -14,5 +14,9 @@
 # endif
 
 char	*ft_get_next_line(int fd);
+size_t	ft_strlen(const char *s);
+char	*ft_strjoin(char *stash, const char *buf);
+char	*ft_strchr(const char *s, char c);
+char	*ft_strldup(const char *s, size_t len);
 
 #endif
